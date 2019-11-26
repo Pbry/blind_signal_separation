@@ -17,7 +17,7 @@ def process(x, w):
     # this function calculates the new axis based on the previous one
     n = len(x[0])
     g_wx = g(np.dot(w, x))
-    # term by term multiplication
+    # we perform a term by term multiplication between x and g_wx
     t1 = 1 / n * (x * np.array([g_wx, g_wx])).sum(axis=1)
 
     t2 = 1 / n * g_p(np.dot(w, x)).sum(axis=0)
