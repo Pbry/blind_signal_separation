@@ -12,7 +12,7 @@ def g_p(y):
 # g_p is g's derivative
 
 def process(x, w):
-    # x is a 2xn vector containing the two signals of length n that we wish to separate
+    # x is a (2,n) vector containing the two signals of length n, from which we want to extract two source signals
     # x has to be whitened
     # this function calculates the new axis based on the previous one
     n = len(x[0])
@@ -28,7 +28,7 @@ def process(x, w):
 
 
 def ICA(x, e):
-    """x is a 2xn vector containing the two signals of length n that we wish to separate
+    """x is a (2,n) vector containing the two signals of length n, from which we want to extract two source signals
     x has to be whitened
     This function gives one axis for the decomposition
     In ICA, we consider the algorithm converges when the sine of the angle (w, w+)
