@@ -1,2 +1,2 @@
 # blind_signal_separation
-Blind separation of two signals with ICA and SOBI algorithm
+Blind separation of two sources using two signals, with ICA and SOBI algorithms
