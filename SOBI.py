@@ -28,6 +28,9 @@ def intercor(x1, x2, w):
 
 
 def SOBI(x,f):
+    """
+    x is a vector of size (2,n) containing two signals of length n. From these two signals we will extract two sources in a new vector s, of size (2,n) also.
+    """
     w = 10  # size of the window used to average intercorrelation matrices
 
     y = x.transpose()
